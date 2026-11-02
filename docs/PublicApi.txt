@@ -1,0 +1,32 @@
+BenScr.Graphs.DirectedEdge`1 : System.ValueType
+  Constructor Void .ctor(T, T)
+  Method Boolean Equals(BenScr.Graphs.DirectedEdge`1[T])
+  Method Boolean Equals(System.Object)
+  Method Boolean op_Equality(BenScr.Graphs.DirectedEdge`1[T], BenScr.Graphs.DirectedEdge`1[T])
+  Method Boolean op_Inequality(BenScr.Graphs.DirectedEdge`1[T], BenScr.Graphs.DirectedEdge`1[T])
+  Method Int32 GetHashCode()
+  Method System.String ToString()
+  Method T get_Source()
+  Method T get_Target()
+  Method Void Deconstruct(T ByRef, T ByRef)
+  Method Void set_Source(T)
+  Method Void set_Target(T)
+  Property T Source
+  Property T Target
+BenScr.Graphs.DirectedGraph`1 : System.Object
+  Constructor Void .ctor(System.Collections.Generic.IReadOnlyList`1[T], System.Collections.Generic.IReadOnlyList`1[BenScr.Graphs.DirectedEdge`1[T]], System.Collections.Generic.IEqualityComparer`1[T])
+  Field Int32 MaximumInputEdges
+  Field Int32 MaximumVertices
+  Method Boolean ContainsEdge(T, T)
+  Method Boolean ContainsVertex(T)
+  Method Boolean TryTopologicalSort(System.Collections.Generic.IReadOnlyList`1[T] ByRef)
+  Method Int32 get_EdgeCount()
+  Method Int32 get_VertexCount()
+  Method System.Collections.Generic.IReadOnlyList`1[System.Collections.Generic.IReadOnlyList`1[T]] StronglyConnectedComponents()
+  Method System.Collections.Generic.IReadOnlyList`1[T] BreadthFirst(T)
+  Method System.Collections.Generic.IReadOnlyList`1[T] DepthFirst(T)
+  Method System.Collections.Generic.IReadOnlyList`1[T] Successors(T)
+  Method System.Collections.Generic.IReadOnlyList`1[T] get_Vertices()
+  Property Int32 EdgeCount
+  Property Int32 VertexCount
+  Property System.Collections.Generic.IReadOnlyList`1[T] Vertices

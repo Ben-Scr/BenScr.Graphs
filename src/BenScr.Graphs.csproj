@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <PackageId>BenScr.Graphs</PackageId>
+    <AssemblyName>BenScr.Graphs</AssemblyName>
+    <RootNamespace>BenScr.Graphs</RootNamespace>
+    <Version>1.0.0</Version>
+    <Authors>Ben Schneider</Authors>
+    <Description>Immutable directed graphs with deterministic breadth/depth-first traversal, topological sorting, cycle detection and iterative strongly connected components.</Description>
+    <PackageTags>graph;directed;traversal;topological;components</PackageTags>
+    <PackageProjectUrl>https://github.com/Ben-Scr/BenScr.Graphs</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Ben-Scr/BenScr.Graphs</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="/" />
+    <None Include="../LICENSE.txt" Pack="true" PackagePath="/" />
+    <None Include="../branding/BenScr_Icon_Master.png" Pack="true" PackagePath="/icon.png" />
+  </ItemGroup>
+</Project>
